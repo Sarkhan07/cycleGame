@@ -1,0 +1,82 @@
+.wrapper {
+    width: 200;
+    height: 450px;
+    border: 35px solid rgb(25, 26, 25);
+}
+
+.game {
+    background-color: #87CEEB;
+    width: 100%;
+    height: 200px;
+    border-bottom: 250px solid #FAD5A5;
+    margin: auto;
+
+
+}
+
+#cycle {
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/cycle.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 250px;
+    opacity: 0.7;
+}
+
+#barrier {
+    width: 75px;
+    height: 60px;
+    background-image: url(./img/barrier.png);
+    background-size: 75px 60px;
+    position: relative;
+    top: 199px;
+    left: 1000px;
+    animation: barrierMove 1.3s infinite linear;
+
+}
+
+@keyframes barrierMove {
+    0% {
+        left: 1000px;
+
+
+
+    }
+
+    100% {
+        left: -20px;
+
+    }
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 250px;
+        opacity: 1;
+    }
+
+    30% {
+        top: 235px;
+        opacity: 1;
+    }
+
+    50% {
+        top: 200px;
+        opacity: 1;
+    }
+
+    80% {
+        top: 235px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 250px;
+        opacity: 0.5%;
+    }
+}
