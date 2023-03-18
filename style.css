@@ -32,7 +32,7 @@
     position: relative;
     top: 199px;
     left: 1000px;
-    animation: barrierMove 1.3s linear;
+    animation: barrierMove 1.8s linear;
     animation-iteration-count: 50;
 }
 
