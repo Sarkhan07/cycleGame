@@ -1,7 +1,12 @@
 const cycle = document.getElementById('cycle');
 const barrier = document.getElementById('barrier');
+const game = document.querySelector('.game');
 
 document.addEventListener('keydown', function (event) {
+    jump();
+});
+
+game.addEventListener('touchstart', function (event) {
     jump();
 });
 
@@ -23,7 +28,10 @@ let isAlive = setInterval(function () {
         window.getComputedStyle(barrier).getPropertyValue('left')
     );
 
+    // let time = window.getComputedStyle(barrier).animationIterationCount;
+
     if (barrierLeft < 30 && barrierLeft > 0 && cycleTop >= 220) {
         alert('Game over!!!');
+        // time = 50;
     }
 }, 10);
